@@ -11,4 +11,4 @@ def mistery(path, extension):
     return count
 
 print(mistery('.', '.py'))
-print(mistery('.', '.txt'))
+print(mistery('.', '.md'))
