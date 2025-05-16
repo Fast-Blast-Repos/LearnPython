@@ -6,9 +6,9 @@
 # then determine the winner.
 # 
 # Libraries needed:
-# - random: https://www.w3schools.com/python/module_random.asp (import random)
+# - random: Tutorials/Libraries/random.md (import random)
 # 
 # More difficulties:
-# - Add a GUI using the library Pygame. 5/5
+# - Add a GUI using the library Pygame (Tutorials/Libraries/pygame.md). 5/5
 # 
 # Make it below, good luck!

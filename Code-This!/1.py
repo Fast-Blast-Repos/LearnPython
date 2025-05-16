@@ -6,6 +6,6 @@
 # player has to guess.
 # 
 # Libraries needed:
-# - random: https://www.w3schools.com/python/module_random.asp (import random)
+# - random: Tutorials/Libraries/random.md (import random)
 # 
 # Make it below, good luck!
