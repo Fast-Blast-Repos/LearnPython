@@ -27,3 +27,16 @@ def genmaze(x, y):
 def printmaze(maze):
     for row in maze:
         print(' '.join(row))
+
+def setpos(maze, x, y):
+    
+    maze[x][y] = '@'  # Mark the current position with 'X'
+
+maze = genmaze(29, 29)  # Generate a maze of size 29x29
+x = 0
+y = 1
+setpos(maze, x, y)  # Set the initial position
+printmaze(maze)
+
+while True:
+    printmaze(maze)
