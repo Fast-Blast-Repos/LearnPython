@@ -29,14 +29,39 @@ def printmaze(maze):
         print(' '.join(row))
 
 def setpos(maze, x, y):
-    
     maze[x][y] = '@'  # Mark the current position with 'X'
 
 maze = genmaze(29, 29)  # Generate a maze of size 29x29
 x = 0
 y = 1
 setpos(maze, x, y)  # Set the initial position
-printmaze(maze)
 
 while True:
     printmaze(maze)
+    move = input("Enter your move (w/a/s/d): ").strip().lower()
+    if move == 'w':
+        if maze[x - 1][y] == ' ':
+            maze[x][y] = ' '
+            x -= 1
+            setpos(maze, x, y)
+    elif move == 's':
+        if maze[x + 1][y] == ' ':
+            maze[x][y] = ' '
+            x += 1
+            setpos(maze, x, y)
+    elif move == 'a':
+        if maze[x][y - 1] == ' ':
+            maze[x][y] = ' '
+            y -= 1
+            setpos(maze, x, y)
+    elif move == 'd':
+        if maze[x][y + 1] == ' ':
+            maze[x][y] = ' '
+            y += 1
+            setpos(maze, x, y)
+    else:
+        print("Invalid move! Use w/a/s/d to move.")
+    # Check for win condition
+    if x == len(maze) - 1 and y == len(maze[0]) - 2:
+        print("Congratulations! You've reached the exit!")
+        break
